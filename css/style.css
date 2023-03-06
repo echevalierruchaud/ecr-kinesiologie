@@ -387,7 +387,6 @@ button {
 .text-img figure img {
      width: 100%;
      max-width: 519px;
-     border: #232323 solid 14px;
      border-radius: 300px;
      float: right;
 }
