@@ -391,6 +391,11 @@ button {
      float: right;
 }
 
+.text-photo {
+     display: flex;
+     justify-content: center;
+}
+
 .text-photo figure img {
      width: 100%;
      max-width: 300px;
