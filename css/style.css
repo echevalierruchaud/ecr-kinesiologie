@@ -764,5 +764,8 @@ button {
 #map {
      height: 400px;
 }
-
+.soustitre{
+     text-align: center;
+     font-size: 2em;
+}
 /** end carte **/
