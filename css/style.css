@@ -230,9 +230,10 @@ button {
 }
 
 .citation {
-     color: #fff;
+     color: #be8c55;
      font-style: italic;
-     text-align: right;
+     font-size: 60px;
+     text-align: center;
 }
 
 .auteur {
@@ -320,7 +321,15 @@ button {
      background: #fff;
      /**padding: 20px 30px;**/
 }
-
+.logo {
+     background: url(../images/banner.jpg);
+     background-size: 100% 100%;
+     background-repeat: no-repeat;
+     padding-top: 60px;
+     background-position: center;
+     background-size: contain;
+     height: 100px;
+}
 .logo a {
      font-size: 40px;
      font-weight: bold;
@@ -330,14 +339,7 @@ button {
 }
 
 .banner_main {
-     padding: 90px 0;
-     background: url(../images/banner.jpg);
-     background-size: 100% 100%;
-     background-repeat: no-repeat;
-     padding-top: 60px;
-     background-position: center;
-     background-size: contain;
-     height: 400px;
+     padding: 30px 0;
      background-color: #00524d;
 }
 
@@ -351,13 +353,9 @@ button {
 }
 
 .text-bg h1 {
-     color: #fff;
-     font-size: 75px;
-     line-height: 90px;
-     padding-bottom: 50px;
-     text-transform: uppercase;
+     font-size: 50px;
+     line-height: 60px;
      font-weight: 600;
-     text-align: left;
 }
 
 .text-bg a {
@@ -370,7 +368,6 @@ button {
      text-align: center;
      display: inline-block;
      transition: ease-in all 0.5s;
-     float: left;
 }
 
 .text-bg a:hover {
