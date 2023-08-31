@@ -13,7 +13,10 @@
  2) font-family: 'Poppins', sans-serif;
  ----------------------------------------*****/
 
-
+ @font-face {
+     font-family: 'tangerine';
+     src: url('../fonts/Tangerine_Regular.ttf');
+ }
 /*--------------------------------------------------------------------- import Files ---------------------------------------------------------------------*/
 
 @import url(animate.min.css);
@@ -133,6 +136,9 @@ a {
      text-decoration: none;
      outline: none !important;
 }
+a:hover {
+     color: #000;
+}
 
 a,
 .btn {
@@ -231,8 +237,8 @@ button {
 
 .citation {
      color: #be8c55;
-     font-style: italic;
-     font-size: 60px;
+     font-family: tangerine;
+     font-size: 64px;
      text-align: center;
 }
 
@@ -322,13 +328,12 @@ button {
      /**padding: 20px 30px;**/
 }
 .logo {
-     background: url(../images/banner.jpg);
-     background-size: 100% 100%;
-     background-repeat: no-repeat;
-     padding-top: 60px;
-     background-position: center;
-     background-size: contain;
-     height: 100px;
+     background-color: #fff;
+     border-radius: 50%;
+     padding: 5px;
+     height: 150px;
+     width: 150px;
+     margin: 30px;
 }
 .logo a {
      font-size: 40px;
@@ -352,6 +357,10 @@ button {
      font-weight: bold;
 }
 
+.bold {
+     font-weight: bold;
+}
+
 .text-bg h1 {
      font-size: 50px;
      line-height: 60px;
@@ -368,6 +377,7 @@ button {
      text-align: center;
      display: inline-block;
      transition: ease-in all 0.5s;
+     border-radius: 26px;
 }
 
 .text-bg a:hover {
@@ -539,7 +549,7 @@ button {
 
 .testimonial {
      margin-top: 90px;
-     /** padding-bottom: 90px; **/
+     padding-bottom: 90px; 
      background: #fff;
      padding-top: 60px;
      color: #1f1f1f;
@@ -571,17 +581,28 @@ button {
      padding: 0px 40px 40px 40px;
 }
 
-.testimonial_Carousel .test_box .jons {
+.testimonial_Carousel .test_box .story {
      text-align: left;
      margin-bottom: 4px;
      margin-left: -10px;
+
+     display: flex;
+     align-items: center;
+}
+
+.fix_box_height {
+     min-height: 510px;
+
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
 }
 
 .testimonial_Carousel {
      padding: 0 60px;
 }
 
-.testimonial_Carousel .test_box .jons h4 {
+.testimonial_Carousel .test_box .story h4 {
      font-size: 25px;
      color: #090808;
      line-height: 32px;
@@ -589,30 +610,49 @@ button {
      display: inline-block;
 }
 
-.testimonial_Carousel .test_box .jons figure {
+.testimonial_Carousel .test_box .story figure {
      margin: 0;
 }
 
 .testimonial_Carousel .test_box p {
-     font-size: 17px;
+     font-size: 15px;
      line-height: 28px;
      color: #090808;
-     text-align: left;
+     text-align: justify;
 }
 
+.testimonial_Carousel .test_box a {
+     font-size: 17px;
+     background-color: #00524d;
+     color: #fff;
+     padding: 13px 0px;
+     width: 100%;
+     max-width: 190px;
+     text-align: center;
+     display: inline-block;
+     border-radius: 26px;
+     transition: ease-in all 0.5s;
+}
+.testimonial_Carousel .test_box a:hover {
+     background-color: #232323;
+     font-size: 17px;
+     color: #fff;
+     transition: ease-in all 0.5s;
+     border-radius: 26px;
+}
 .testimonial_Carousel .carousel-indicators {
      display: none;
 }
 
-#myCarousel .carousel-control-prev,
-#myCarousel .carousel-control-next {
+#carousel .carousel-control-prev,
+#carousel .carousel-control-next {
      width: 62px;
      height: 62px;
-     background: #deae25;
+     background-color: #00524d;
      opacity: 1;
      font-size: 28px;
      color: #fff;
-     top: 50%;
+     top: 250px;
      border-radius: 30px;
 }
 

