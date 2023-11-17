@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+   <!-- basic -->
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <!-- mobile metas -->
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+   <!-- site metas -->
+   <title>ECR Kinésiologie</title>
+   <meta name="keywords" content="ECR Kinésiologie, Kinésiologue, Nantes, Orvault, Sautron, Saint-Herblain, Treillières, La Chapelle sur Erdre, potentiels, développement personnel, bien être, connaissance de soi, changement">
+   <meta name="description" content="Consultation en kinésiologie à Orvault">
+   <meta name="author" content="Emeline Chevalier-Ruchaud">
+   <meta name="Revisit-After" content="15 days">
+   <meta name="Robots" content="all">
+   <meta name="Distribution" content="local">
+   <meta name="Rating" content="general">
+   <meta name="Geography" content="Orvault">
+   <meta name="DC.Title" content="ECR Kinésiologie">
+   <meta name="DC.Keywords" content="ECR Kinésiologie, Kinésiologue, Nantes, Orvault, Sautron, Saint-Herblain, Treillières, La Chapelle sur Erdre, potentiels, développement personnel, bien être, connaissance de soi, changement">
+   <!-- bootstrap css -->
+   <link rel="stylesheet" href="css/bootstrap.min.css">
+   <!-- style css -->
+   <link rel="stylesheet" href="css/style.css">
+   <!-- Responsive-->
+   <link rel="stylesheet" href="css/responsive.css">
+   <!-- favicon -->
+   <link rel="icon" href="images/favicon.png" type="image/gif" />
+   <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="ht@tps://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.1/dist/leaflet.css"
+      integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ=="
+      crossorigin="" />
+</head>
+<!-- body -->
+
+<body class="main-layout">
+   <!-- header -->
+   <header>
+      <!-- header inner -->
+      <div class="header">
+         <div class="container-fluid">
+            <div class="row">
+               <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col logo_section">
+                  <div class="full">
+                     <div class="center-desk">
+                        <div class="logo2">
+                           <a class="" href="/"><img src="images/logo_small.png" alt="#" /></a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-xl-10 col-lg-10 col-md-10 col-sm-10">
+                  <nav class="navigation navbar navbar-expand-md navbar-dark ">
+                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsECR"
+                        aria-controls="navbarsECR" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                     </button>
+                     <div class="collapse navbar-collapse" id="navbarsECR">
+                        <ul class="navbar-nav mr-auto">
+                           <li class="nav-item">
+                              <a class="nav-link" href="/kinesiologie">Kinésiologie</a>
+                           </li>
+                           <li class="nav-item">
+                              <a class="nav-link" href="/access-bars">Access Bars</a>
+                           </li>
+                           <li class="nav-item active">
+                              <a class="nav-link" href="/rdv">Prendre rendez-vous</a>
+                           </li>
+                           <li class="nav-item">
+                              <a class="nav-link" href="/qui-suis-je">Qui suis-je ?</a>
+                           </li>
+                           <li class="nav-item">
+                              <a class="nav-link" href="/infos-pratiques">Infos pratiques</a>
+                           </li>
+                           <li class="nav-item">
+                              <a class="nav-link" href="/blog">Blog</a>
+                           </li>
+                        </ul>
+                     </div>
+                  </nav>
+               </div>
+            </div>
+         </div>
+      </div>
+      </div>
+   </header>
+   <!-- end header inner -->
+   <!-- end header -->
+   <!-- Histoires -->
+   <div id="histoires" class="testimonial">
+      <div class="container">
+         <div class="row">
+            <div class="col-md-12">
+               <div class="titlepage">
+                  <h2>Les petites histoires</h2>
+                  <span></span>
+                  <strong></strong>
+               </div>
+            </div>
+         </div>
+         <div class="row">
+            <div class="col-md-12 text-center">
+               <h3>Vous reconnaissez-vous dans l'une de ces histoires ?</h3>
+               <p>Parce que chacun à sa propre histoire, je vous propose un accompagnement personnalisé.</p>
+            </div>
+         </div>
+         <div class="row">
+            <div class="col-md-12">
+               <div id="carousel" class="carousel slide testimonial_Carousel" data-ride="carousel">
+                  <ol class="carousel-indicators">
+                     <li data-target="#monhistoire" data-slide-to="0" class="active"></li>
+                     <li data-target="#monhistoire" data-slide-to="1"></li>
+                     <li data-target="#monhistoire" data-slide-to="2"></li>
+                     <li data-target="#monhistoire" data-slide-to="3"></li>
+                  </ol>
+                  <div class="carousel-inner">
+                     <div class="carousel-item active">
+                        <div class="container">
+                           <div class="carousel-caption">
+                              <div class="row d_flex">
+                                 <div class="col-md-4">
+                                    <div class="test_box">
+                                       <div class="story">
+                                          <figure><img src="images/sable.png" alt="#" /></figure>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="col-md-8">
+                                    <div class="test_box fix_box_height">
+                                       <div class="story">
+                                          <h4>C’est l’histoire d’un petit grain de poussière</h4>
+                                       </div>
+                                       <p>C’est l’histoire d’un petit grain de poussière, il est là, on peut ne pas y prêter attention ou bien l’épousseter, il disparaît momentanément, revient parfois, de façon régulière ou bien à des occasions particulières. Ce petit grain de poussière peut devenir grain de sable et finir par gripper la machine et parfois même la stopper.</p>
+                                       <p>Vous l’aurez deviné, ce petit grain est en chacun de nous, c’est un stress qui peut devenir chronique et nous affaiblir, c’est une douleur à laquelle on s’habitue jusqu’à ce qu’on se rende compte qu’elle nous empêche de faire, c’est cette réaction systématique que l’on a face à une situation particulière qui semble dicter notre vie.</p>
+                                       <p><span class="bold">Rien n’est inéluctable.</span> Ces petits grains de sable nous pouvons les identifier, tenter de les comprendre pour ainsi les libérer.</p>
+                                       <br/>
+                                       <a href="#rdv">Je prends rendez-vous</a>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="carousel-item">
+                        <div class="container">
+                           <div class="carousel-caption">
+                              <div class="row d_flex">
+                                 <div class="col-md-4">
+                                    <div class="test_box">
+                                       <div class="story">
+                                          <figure><img src="images/etiquette.png" alt="#" /></figure>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="col-md-8">
+                                    <div class="test_box fix_box_height">
+                                       <div class="story">
+                                          <h4>C’est l’histoire de ces mots qui nous collent à la peau</h4>
+                                       </div>
+                                       <p>C’est l’histoire d’un mot, prononcé ou sous-entendu, qui, parfois dit de façon anodine ou bien répétitive, va s’accrocher à nous, devenir une étiquette que l’on porte consciemment ou inconsciemment et qui va dicter notre conduite.
+                                          Ce mot peut devenir un mal, un mal-être, une maladie (mal-à-dit).</p>
+                                       <p>« Tu es nul », « tu es un bon à rien », « tu chantes faux », « tu n’auras jamais la prestance d’untel »…
+                                          Ces injonctions que l’on peut entendre ou bien se les dire à soi-même vont devenir des croyances limitantes.</p>
+                                       <p>Reprenez <span class="bold">confiance en vous</span>, valorisez vos <span class="bold">talents et vos potentiels</span>. La kinésiologie peut vous aider à vous débarrasser de vos étiquettes.</p>
+                                       <br/>
+                                       <a href="#rdv">Je prends rendez-vous</a>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="carousel-item">
+                        <div class="container">
+                           <div class="carousel-caption">
+                              <div class="row d_flex">
+                                 <div class="col-md-4">
+                                    <div class="test_box">
+                                       <div class="story">
+                                          <figure><img src="images/livre.png" alt="#" /></figure>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="col-md-8">
+                                    <div class="test_box fix_box_height">
+                                       <div class="story">
+                                          <h4>C’est l’histoire d’une page qui se tourne</h4>
+                                       </div>
+                                       <p>C’est l’histoire de ce moment charnière, celui qui vous fait basculer franchement d’un état à l’autre (déménagement, changement de travail, retraite...) ou bien de l’état qui s’est installé sans vous en rendre compte et qui aujourd’hui vous amène à vous demander « où suis-je ? », « comment ai-je fait pour en arriver là ? ».</p>
+                                       <p>Ce changement qu’il soit choisi ou subi peut être perturbant, vous provoquer des angoisses, vous empêcher de dormir ou vous stresser continuellement.</p>
+                                       <p>Est-ce la peur de l’inconnu, la peur de perdre plus qu’à n’y gagner, la peur ne plus savoir qui l’on est ?</p>
+                                       <p>Vous souhaitez retrouver votre <span class="bold">joie de vivre</span> et <span class="bold">cheminer sereinement</span> dans votre vie, la kinésiologie peut vous aider à identifier ses peurs, les comprendre et les libérer.</p>
+                                       <br/>
+                                       <a href="#rdv">Je prends rendez-vous</a>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="carousel-item">
+                        <div class="container">
+                           <div class="carousel-caption">
+                              <div class="row d_flex">
+                                 <div class="col-md-4">
+                                    <div class="test_box">
+                                       <div class="story">
+                                          <figure><img src="images/croquis.png" alt="#" /></figure>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="col-md-8">
+                                    <div class="test_box fix_box_height">
+                                       <div class="story">
+                                          <h4>C’est l’histoire d’un plan qui reste un croquis</h4>
+                                       </div>
+                                       <p>Vos pensées vous emmène refaire le monde, votre tête déborde d’idées mais vos projets n’aboutissent pas. Ils restent dans la tête, vos fesses sur le canapé, à l’état de croquis, ou bien abandonné au premier écueil. </p>
+                                       <p>Derrière cela, il y a parfois, un manque de confiance en soi, des croyances limitantes, des auto-sabotage inconscients...</p>
+                                       <p>Vous souhaitez vous <span class="bold">affranchir</span> de <span class="bold">vos</span> propres <span class="bold">barrières</span>, réaliser vos <span class="bold">aspirations</span> et vos <span class="bold">rêves</span>, la kinésiologie peut vous aidez à les identifier, les comprendre et vous en libérer.</p>
+                                       <br/>
+                                       <a href="#rdv">Je prends rendez-vous</a>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+                     <i class="fa fa-long-arrow-left" aria-hidden="true"></i>
+                  </a>
+                  <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+                     <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+                  </a>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>   
+   <!-- end petites histoires -->
+   <!--  footer -->
+   <footer>
+      <div class="footer">
+         <div class="copyright">
+            <div class="container">
+               <div class="row">
+                  <div class="col-md-8">
+                     <h6>&copy; Copyright 2023 All Right Reserved By Emeline Chevalier-Ruchaud</h6>
+                  </div>
+                  <div class="col-md-4">
+                     <h6><a href="mentions-legales.html">Mentions légales</a></h6>
+                     <h6><a href="politique-confidentialite.html">Politique de confidentialité</a></h6>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </footer>
+   <!-- end footer -->
+   <!-- Javascript files-->
+   <script src="js/jquery.min.js"></script>
+   <script src="js/bootstrap.bundle.min.js"></script>
+   <script src="js/all.min.js"></script>
+   <script src="js/plugin.js"></script>
+   <script src="js/custom.js"></script>
+</body>
+
+</html>

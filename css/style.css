@@ -238,8 +238,7 @@ button {
 .citation {
      color: #be8c55;
      font-family: tangerine;
-     font-size: 64px;
-     text-align: center;
+     font-size: 2em;
 }
 
 .auteur {
@@ -343,9 +342,29 @@ button {
      line-height: 40px;
 }
 
+.logo2 img{
+     height: 50px;
+}
+
 .banner_main {
      padding: 30px 0;
      background-color: #00524d;
+     font-size: 1.2em;
+     .badge-primary {
+          background-color: #be8c55;
+          padding: 10px 20px 10px 15px;
+          margin: 5px;
+          font-family: tangerine;
+          font-size: 2em;
+     }
+     .btn {
+          color: #ffffff;
+          background-color: #000;
+          padding: 13px 10px;
+          display: inline-block;
+          border-radius: 26px;
+          transition: ease-in all 0.5s;
+     }
 }
 
 .text-bg {
@@ -415,6 +434,7 @@ button {
      border-radius: 250px;
      float: right;
 }
+
 .text-photo figure figcaption {
      bottom: -23px;
      position: absolute;
@@ -462,7 +482,38 @@ button {
      flex-wrap: wrap;
 }
 
+/** access section **/
 
+.padd_left0 {
+     padding-left: 0;
+}
+
+.access_bars {
+     background: #232323;
+     padding: 90px 0px 60px 0px;
+
+}
+
+.access_bars .titlepage h2 {
+     color: #fff;
+     padding-bottom: 10px;
+}
+
+.access_bars h3 {
+     color: #fff;
+}
+.access_bars a {
+     font-size: 17px;
+     background-color: #00524d;
+     color: #fff;
+     padding: 13px 0px;
+     width: 100%;
+     max-width: 190px;
+     text-align: center;
+     display: inline-block;
+     border-radius: 26px;
+     transition: ease-in all 0.5s;
+}
 /** kinesio section **/
 
 .padd_left0 {
@@ -472,7 +523,6 @@ button {
 .kinesio {
      background: #232323;
      padding: 90px 0px 60px 0px;
-
 }
 
 .kinesio .titlepage h2 {
@@ -482,6 +532,37 @@ button {
 
 .kinesio h3 {
      color: #fff;
+}
+
+.kinesio a {
+     font-size: 17px;
+     background-color: #00524d;
+     color: #fff;
+     padding: 13px 0px;
+     width: 100%;
+     max-width: 190px;
+     text-align: center;
+     display: inline-block;
+     border-radius: 26px;
+     transition: ease-in all 0.5s;
+}
+/** Identité **/
+.identite {
+     background: #232323;
+     padding: 90px 0px 60px 0px;
+}
+
+.identite .titlepage h2 {
+     color: #fff;
+     padding-bottom: 10px;
+}
+
+.identite h3 {
+     color: #fff;
+}
+
+.identite a {
+     color: #be8c55;
 }
 
 .titlepage span {
@@ -501,6 +582,46 @@ button {
      margin: 0 auto;
      top: 61px;
 }
+
+/** Prestations **/
+
+.prestations {
+     background: #232323;
+     padding: 90px 0px 60px 0px;
+
+}
+
+.prestations .titlepage h2 {
+     color: #fff;
+     padding-bottom: 10px;
+}
+
+.prestations h3 {
+     color: #fff;
+     margin: 10px;
+     font-size: 1.1em;
+}
+.prestations .btn {
+     color: #fff;
+     background-color: #00524d;
+     padding: 13px 10px;
+     display: inline-block;
+     border-radius: 26px;
+     transition: ease-in all 0.5s;
+}
+
+.prestations .card {
+     margin-bottom: 10px;
+}
+.prestations .btn-primary {
+     background-color: #00524d;
+     border-color: #00524d;
+}
+
+.prestations p {
+     color: #00524d;
+}
+
 
 .we_do_box i {
      border: #ceab06 solid 4px;
@@ -677,6 +798,9 @@ button {
      padding-bottom: 10px;
      color: #fff;
 }
+.contact h3 {
+     color: #fff;
+}
 
 .contact .titlepage span {
      background-color: #232323;
@@ -690,7 +814,13 @@ button {
      padding: 90px 0;
      background-color: #00524d;
 }
-
+.coordonnees {
+     font-size: 1.2em;
+}
+.coordonnees .plus {
+     font-size: 0.8em;
+     text-decoration: underline !important;
+}
 .main_form {
      padding: 50px 50px;
      background: #fff;
