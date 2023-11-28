@@ -515,6 +515,20 @@ button {
      border-radius: 26px;
      transition: ease-in all 0.5s;
 }
+a.simple-link {
+     color: #be8c55;
+     text-decoration: underline !important;
+     background: none;
+     padding: 0;
+     max-width: none;
+     text-align: right;
+     display: inline;
+     border-radius: 0;
+     transition: none;
+}
+a.simple-link:hover {
+     color: #00524d;
+}
 /** kinesio section **/
 
 .padd_left0 {
