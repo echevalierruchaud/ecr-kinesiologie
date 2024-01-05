@@ -482,6 +482,19 @@ button {
      align-items: center;
      flex-wrap: wrap;
 }
+/** actu section **/
+.actu {
+     background: #be8c55;
+}
+.actu p {
+     color: #000;
+     font-size: 0.8em;
+}
+.actu a {
+     color: #000;
+     text-decoration: overline;
+     font-weight: bold;
+}
 
 /** access section **/
 
