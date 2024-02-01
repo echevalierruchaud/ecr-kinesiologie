@@ -488,7 +488,6 @@ button {
 }
 .actu p {
      color: #000;
-     font-size: 0.8em;
 }
 .actu a {
      color: #000;
@@ -848,6 +847,10 @@ a.simple-link:hover {
 .coordonnees {
      font-size: 1.2em;
 }
+.coordonnees h4{
+     color: white;
+     text-decoration: underline;
+}
 .coordonnees .plus {
      font-size: 0.8em;
      text-decoration: underline !important;
@@ -965,7 +968,8 @@ a.simple-link:hover {
 
 /** end footer **/
 /** carte **/
-#map {
+.map {
+     margin-top: 5px;
      height: 400px;
 }
 .soustitre{

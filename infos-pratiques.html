@@ -106,21 +106,54 @@
       <div class="container">
          <div class="row">
             <div class="col-md-6">
-               <h3 class="bold">Coordonnées de mon espace d'accueil</h3>
-               <div>36 rue Jules Verne - 44700 Orvault<br />
-                  2è étage</div>
+               <div style="font-style: italic; text-decoration: underline;">Jusqu'au 29/02/2024</div>
+               <div style="font-weight: bolder;">36 rue Jules Verne, Orvault (2è étage)</div>
+               <div>Ligne 69 - arrêt Porte de Sautron</div>
+               <div>Ligne 89 - arrêt Forum d'Orvault</div>
+               <br/>
+                 
+               <div style="font-style: italic; text-decoration: underline;">À partir du 01/03/2024</div>
+               <div style="font-weight: bolder;">28 av. Alexandre Goupil, Orvault</div>
+               <div>Ligne 79 - arrêt Avenue des pins</div>
+               <div>Ligne 3 - arrêt Bignon (500m à pied)</div>
+               <br/>
+               <!--<h3 class="bold">Coordonnées de mon espace d'accueil</h3>
+               <div class="row">
+                  <div class="col-md-6">
+                     <div>36 rue Jules Verne, Orvault (2è étage)</div>
+                  </div>
+                  <div class="col-md-6">
+                     <div>28 av. Alexandre Goupil, Orvault</div>
+                  </div>
+               </div>
+               
+               <br />
+               <h3 class="bold">Transports en commun</h3>
+               <div class="row">
+                  <div class="col-md-6">
+                     <div>Ligne 69 - arrêt Porte de Sautron</div>
+                     <div>Ligne 89 - arrêt Forum d'Orvault</div>
+                  </div>
+                  <div class="col-md-6">
+                     <div>Ligne 79 - arrêt Avenue des pins</div>
+                     <div>Ligne 3 - arrêt Bignon (500m à pied)</div>
+                  </div>
+               </div>-->
+               <br />
+               <h3 class="bold">Stationnement</h3>
+               <div class="row">
+                  <div class="col-md-6">
+                  </div>
+                  <div class="col-md-6">
+                  </div>
+               </div>
+               <div>Stationnement vélo possible en bas du bâtiment</div>
+               <div>Parking gratuit à proximité</div>
+               <br/>
+
                <div><i class="fa-solid fa-phone"></i><a href="tel:+33652681232"> 06 52 68 12 32</a></div>
                <div><i class="fa-solid fa-envelope"></i><a href="mailto:ecr.kinesiologie@gmail.com">
                      ecr.kinesiologie@gmail.com</a></div>
-               <br />
-               <h3 class="bold">Transports en commun</h3>
-               <div>Ligne 69 - arrêt Porte de Sautron</div>
-               <div>Ligne 89 - arrêt Forum d'Orvault</div>
-               <br />
-               <h3 class="bold">Stationnement</h3>
-               <div>Stationnement vélo possible en bas du bâtiment</div>
-               <div>Parking gratuit devant le bureau</div>
-               <div>Parking gratuit Jardiland (9h-19h)</div>
                <br/>
                <div>
                   <a href="https://facebook.com/ecr-kinesiologie" target="_blank"> <i class="fa-brands fa-facebook fa-2x"></i></a>&nbsp;&nbsp;
@@ -131,8 +164,11 @@
                   <a href="https://g.page/r/CQ2OjvsXkd-5EB0/review" target="_blank">Me laisser un avis</a>
                </div>
             </div>
-            <div class="col-md-6">
-               <div id="map"></div>
+            <div class="col-md-3">
+               <div id="mapOld" class="map"></div>
+            </div>
+            <div class="col-md-3">
+               <div id="mapNew" class="map"></div>
             </div>
          </div>
       </div>
@@ -167,14 +203,17 @@
       integrity="sha512-/Nsx9X4HebavoBvEBuyp3I7od5tA0UzAxs+j83KgC8PU0kgB4XiK4Lfe4y4cgBtaRJQEIFCW+oC506aPT2L1zw=="
       crossorigin=""></script>
    <script type="text/javascript">
-      // On initialise la latitude et la longitude de Paris (centre de la carte)
+      // On initialise le centre de la carte
       var lat = 47.25224;
       var lon = -1.61974;
-      var macarte = null;
+
+      var lat2 = 47.253601;
+      var lon2 = -1.596808;
+
       // Fonction d'initialisation de la carte
       function initMap() {
          // Créer l'objet "macarte" et l'insèrer dans l'élément HTML qui a l'ID "map"
-         macarte = L.map('map').setView([lat, lon], 15);
+         const macarte = L.map(document.getElementById('mapOld')).setView([lat, lon], 15);
          // Leaflet ne récupère pas les cartes (tiles) sur un serveur par défaut. Nous devons lui préciser où nous souhaitons les récupérer. Ici, openstreetmap.fr
          L.tileLayer('https://{s}.tile.openstreetmap.fr/osmfr/{z}/{x}/{y}.png', {
             // Il est toujours bien de laisser le lien vers la source des données
@@ -189,6 +228,21 @@
             popupAnchor: [-3, -76],
          });
          var marker = L.marker([lat, lon], { icon: myIcon }).addTo(macarte);
+
+         //2è carte
+         const macarte2 = L.map(document.getElementById('mapNew')).setView([lat2, lon2], 15);
+         L.tileLayer('https://{s}.tile.openstreetmap.fr/osmfr/{z}/{x}/{y}.png', {
+            attribution: 'données © <a href="//osm.org/copyright">OpenStreetMap</a><a href="//openstreetmap.fr">OSM France</a>',
+            minZoom: 1,
+            maxZoom: 20
+         }).addTo(macarte2);
+         var myIcon2 = L.icon({
+            iconUrl: "./icon/marker.png",
+            iconSize: [25, 41],
+            iconAnchor: [12, 41],
+            popupAnchor: [-3, -76],
+         });
+         var marker2 = L.marker([lat2, lon2], { icon: myIcon2 }).addTo(macarte2);
       }
       window.onload = function () {
          // Fonction d'initialisation qui s'exécute lorsque le DOM est chargé
