@@ -476,6 +476,10 @@ button {
      padding: 0;
      text-transform: uppercase;
 }
+.limitation{
+     border-top: #e5af23 solid 1px;
+     width: 260px;
+}
 
 .d_flex {
      display: flex;
@@ -972,8 +976,22 @@ a.simple-link:hover {
      margin-top: 5px;
      height: 400px;
 }
-.soustitre{
+.soustitre {
      text-align: center;
      font-size: 2em;
 }
 /** end carte **/
+.notice {
+     font-style: italic;
+     font-size: 0.8em;
+}
+
+.sources {
+     font-size: 0.9em;
+}
+.phrase {
+     font-size: 1.5em;
+     color: #be8c55;
+     margin: 5px;
+     text-align: center;
+}
