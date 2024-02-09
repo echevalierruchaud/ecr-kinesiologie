@@ -374,8 +374,8 @@ button {
 }
 
 .text-center {
-     margin-top: 25px;
-     margin-bottom: 25px;
+     margin-top: 10px;
+     margin-bottom: 10px;
 }
 
 .black {
@@ -990,4 +990,8 @@ a.simple-link:hover {
      color: #be8c55;
      margin: 5px;
      text-align: center;
+}
+
+.presentation {
+     color: #fff;
 }
