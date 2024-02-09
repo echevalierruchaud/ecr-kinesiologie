@@ -607,14 +607,9 @@ a.simple-link:hover {
      position: relative;
 }
 
-.titlepage strong {
+.titlepage hr {
      border-top: #e5af23 solid 1px;
      width: 260px;
-     position: absolute;
-     left: 0;
-     right: 0;
-     margin: 0 auto;
-     top: 61px;
 }
 
 /** Prestations **/
@@ -840,8 +835,9 @@ a.simple-link:hover {
      background-color: #232323;
 }
 
-.contact .titlepage strong {
+.contact .titlepage hr {
      border-top: #fff solid 1px;
+     width: 260px;
 }
 
 .contact {
