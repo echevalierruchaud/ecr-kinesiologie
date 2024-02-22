@@ -237,8 +237,10 @@ button {
 
 .citation {
      color: #be8c55;
-     font-family: tangerine;
-     font-size: 2em;
+     /**font-size: 0.8em;*/
+     line-height: 0.9em;
+     text-align: center;
+     padding: 10px;
 }
 
 .auteur {
@@ -994,4 +996,5 @@ a.simple-link:hover {
 
 .presentation {
      color: #fff;
+     font-weight: bold;
 }
